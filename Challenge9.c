@@ -13,7 +13,22 @@ int print_prime_factors(int N){
   } else { //N is odd
     int arr[(N+1)/2];
   }
-}
+
+  /*
+  Implement algorithm described at https://www.geeksforgeeks.org/prime-factor/
+
+  n.b. I didn't peak at the C++ implementation - for better or worse.
+  */
+
+  //Step 1: While n is divisible by 2, print 2 and divide n by 2.
+
+  if (N % 2){
+    arr[0] = 2;
+
+    while (N % 2 == 0) {
+      N = N / 2;
+    }
+  } //N must now be odd.
 
 int main() {
 
