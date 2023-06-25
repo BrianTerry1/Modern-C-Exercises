@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int print_prime_factors(int N){
   /*
@@ -29,6 +30,9 @@ int print_prime_factors(int N){
       N = N / 2;
     }
   } //N must now be odd.
+
+  //Step 2: Start a loop from i = 3 to square root of n. While i divides n, print i and divide n by i, increment i by 2 and continue.
+}
 
 int main() {
 
